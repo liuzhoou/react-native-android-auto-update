@@ -1,4 +1,4 @@
-# react-native-android-auto-update
+# react-native-android-auto-update [RN >= 0.55.4]
  这个库暴露出了下载并安装接口来实现更新apk,之前的逻辑以及界面都由RN实现。
  Base on 
  https://github.com/ribuluo000/android-auto-update
@@ -7,7 +7,7 @@ package.json 添加
 
 ```
 "dependencies": {
-    "react-native-android-auto-update": "git+https://github.com/ribuluo000/react-native-android-auto-update.git",
+    "react-native-android-auto-update": "git://github.com/liuzhoou/react-native-android-auto-update.git",
     
     }
 

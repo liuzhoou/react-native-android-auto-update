@@ -53,12 +53,22 @@ public class AndroidAutoUpdateModule extends ReactContextBaseJavaModule implemen
 
     @ReactMethod
     public void getAppVersionCode(Callback callback) {
-	            final Activity activity = getCurrentActivity();
+	    final Activity activity = getCurrentActivity();
         if (activity == null) {
             return;
         }
         int versionCode = AppUtils.getVersionCode(activity);
 		callback.invoke(versionCode);
+    }
+
+    @ReactMethod
+    public void getAppVersionName(Callback callback) {
+	    final Activity activity = getCurrentActivity();
+        if (activity == null) {
+            return;
+        }
+        String versionName = AppUtils.getVersionName(activity);
+		callback.invoke(versionName);
     }
 
     @Override

@@ -13,19 +13,11 @@ import java.util.List;
 
 public class AndroidAutoUpdatePackage implements ReactPackage {
 
-    public AndroidAutoUpdatePackage() {
-    }
-
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         return Arrays.<NativeModule>asList(
             new AndroidAutoUpdateModule(reactContext)
         );
-    }
-
-    @Override
-    public List<Class<? extends JavaScriptModule>> createJSModules() {
-        return Collections.emptyList();
     }
 
     @Override
