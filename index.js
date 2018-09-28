@@ -7,6 +7,11 @@ module.exports = {
       cb(versionCode);
     });
   },
+  getAppVersionName(cb) {
+    AndroidAutoUpdate.getAppVersionName((versionName) =>{
+      cb(versionName);
+    });
+  },
   goToDownloadApk(url) {
     AndroidAutoUpdate.goToDownloadApk(url);
   },
